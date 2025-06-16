@@ -140,19 +140,3 @@ for src, dst in pairs:
     print("BFS:", " → ".join(p_bfs), f"(довжина {len(p_bfs)-1})")
     if len(p_dfs) != len(p_bfs):
         print("   ⚠ BFS найкоротший; DFS може бути довшим через інший порядок обходу")
-
-
-"""
-DFS vs BFS (Kyiv-metro)
-
-• Akademmistechko → Lisova  – 17 ребер у обох.
-  Лише пряма червона лінія, альтернатив немає.
-
-• Heroiv Dnipra → Lisova   – DFS 19 > BFS 15.
-  DFS зайшов через Palats Sportu - Zoloti Vorota (довший обхід),
-  BFS одразу взяв коротшу пересадку Maidan - Khreshchatyk.
-
-• Syrets → Teremky         – 14 ребер у обох.
-  Єдиний мінімальний шлях із зеленої на синю через
-  Palats Sportu ↔ Ploshcha Lva Tolstoho; DFS випадково потрапив у нього.
-"""
